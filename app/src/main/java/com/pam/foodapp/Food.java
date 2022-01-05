@@ -14,4 +14,20 @@ public class Food {
         this.price = price;
         this.image = image;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public Drawable getImage() {
+        return image;
+    }
+
+    public int getPrice() {
+        return price;
+    }
 }

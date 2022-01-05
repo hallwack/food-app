@@ -20,7 +20,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        ArrayList<Food> foodsData = FoodData .getFoodData(getApplicationContext());
+        ArrayList<Food> foodsData = FoodData.getFoodData(getApplicationContext());
         RecyclerView recyclerView = findViewById(R.id.list_item);
         FoodsAdapter adapter = new FoodsAdapter(foodsData);
         recyclerView.setAdapter(adapter);

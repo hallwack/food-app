@@ -31,7 +31,7 @@ public class FoodsAdapter extends RecyclerView.Adapter<FoodsAdapter.ListViewHold
         Food food = foods.get(position);
 
         holder.title.setText(food.title);
-        holder.price.setText(food.price);
+        holder.price.setText("Rp. " + String.valueOf(food.price));
         holder.image.setBackground(food.image);
         holder.image.setImageDrawable(food.image);
     }
@@ -50,8 +50,9 @@ public class FoodsAdapter extends RecyclerView.Adapter<FoodsAdapter.ListViewHold
             image = itemView.findViewById(R.id.food_image);
             title = itemView.findViewById(R.id.food_name);
             price = itemView.findViewById(R.id.food_price);
-        }
 
+            itemView.setOnClickListener(this);
+        }
 
         @Override
         public void onClick(View view) {

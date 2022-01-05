@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/button_logout"
-        android:icon="@drawable/ic_baseline_more_vert"
+        android:icon="@drawable/ic_baseline_login_24"
         android:title="Logout"
         app:showAsAction="ifRoom"
          />
