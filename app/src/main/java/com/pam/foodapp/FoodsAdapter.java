@@ -1,6 +1,7 @@
 package com.pam.foodapp;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class FoodsAdapter extends RecyclerView.Adapter<FoodsAdapter.ListViewHolder> {
-    private ArrayList<Food> foods;
+    final private ArrayList<Food> foods;
 
     FoodsAdapter(ArrayList<Food> list) {
         this.foods = list;
@@ -32,8 +33,11 @@ public class FoodsAdapter extends RecyclerView.Adapter<FoodsAdapter.ListViewHold
 
         holder.title.setText(food.title);
         holder.price.setText("Rp. " + String.valueOf(food.price));
-        holder.image.setBackground(food.image);
-        holder.image.setImageDrawable(food.image);
+
+        String PACKAGE_NAME = holder.image.getContext().getPackageName();
+        int imageResource = holder.image.getContext().getResources().getIdentifier("@drawable/" + food.getImage(), null, PACKAGE_NAME);
+        holder.image.setBackground(holder.image.getContext().getResources().getDrawable(imageResource));
+        holder.image.setImageDrawable(holder.image.getContext().getResources().getDrawable(imageResource));
     }
 
     @Override
@@ -43,7 +47,7 @@ public class FoodsAdapter extends RecyclerView.Adapter<FoodsAdapter.ListViewHold
 
     class ListViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         ImageView image;
-        TextView title, description, price;
+        TextView title, price;
         public ListViewHolder(View itemView) {
             super(itemView);
 

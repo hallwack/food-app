@@ -1,18 +1,22 @@
 package com.pam.foodapp;
 
-import android.graphics.drawable.Drawable;
-
 public class Food {
+    int id;
     String title;
     String description;
     int price;
-    Drawable image;
+    String image;
 
-    Food(String title, String description, int price, Drawable image) {
+    Food(int id, String title, String description, int price, String image) {
+        this.id = id;
         this.title = title;
         this.description = description;
         this.price = price;
         this.image = image;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getTitle() {
@@ -23,7 +27,7 @@ public class Food {
         return description;
     }
 
-    public Drawable getImage() {
+    public String getImage() {
         return image;
     }
 

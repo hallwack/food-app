@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="260dp"
+    android:layout_height="290dp"
     android:layout_margin="28dp"
+    android:background="@drawable/customborder"
     android:orientation="vertical">
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -16,15 +18,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:textSize="28dp"
-        android:text="Food Name" />
+        android:text="Food Name"
+        android:textSize="28dp" />
 
     <TextView
         android:id="@+id/food_price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:textSize="18dp"
-        android:text="Rp. 10000" />
+        android:text="Rp. 10000"
+        android:textSize="18dp" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

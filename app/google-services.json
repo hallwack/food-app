@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "112899742314",
+    "project_id": "pesenin-9c5f4",
+    "storage_bucket": "pesenin-9c5f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112899742314:android:5c3721df32b883a5230813",
+        "android_client_info": {
+          "package_name": "com.pam.foodapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112899742314-s775gpi8fm9sc2t85gutn53uj52jo60s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDot4XyDQ-9FmhJua0hextb0gWPfmInwUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112899742314-s775gpi8fm9sc2t85gutn53uj52jo60s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
